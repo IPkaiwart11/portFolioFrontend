@@ -24,10 +24,10 @@ export default defineConfig({
       '/src': path.resolve(__dirname, 'src'),
     },
   },
-  server: {
-    proxy: {
-      '/api': 'http://localhost:8800',
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     '/api': 'http://localhost:8800',
+  //   },
+  // },
 });
 
