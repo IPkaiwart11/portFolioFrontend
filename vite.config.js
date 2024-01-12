@@ -9,10 +9,10 @@ export default defineConfig({
       '/api': 'http://localhost:8800',
     },
   },
-  resolve: {
-    alias: {
-      '/src': 'opt/build/repo/src',
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     '/src': 'opt/build/repo/src',
+  //   },
+  // },
 })
 
