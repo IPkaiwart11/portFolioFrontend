@@ -1,0 +1,79 @@
+.background{
+          padding: 10%;
+               display: flex;
+               width: 100%;
+               align-items: center;
+               flex-direction: row;
+               .skillheading{
+                     text-align: center;
+                             width: 100%;
+                            font-size: 50px;  
+                            color: white;
+                            text-shadow: 10px 9px black;
+               }
+           
+}
+
+.container{ 
+               display: inline-block;      
+        width: 100%;
+        background-color: gray;
+       margin: 20px 0px;
+       margin-left: 10px;
+        .skills{
+               padding: 10px;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               font-size: larger;
+               // width: 95%;
+        } 
+        .html{
+               width: 97%;
+               background-color: aqua;
+        }
+        .css3{
+               width: 95%;
+               background-color: bisque;
+        }      
+        .js{
+               width: 85%;
+               background-color: pink;
+        }
+        .react{
+               width: 80%;
+               background-color: blueviolet;
+        }
+        .nodejs{
+               width: 80%;
+               background-color: rgb(81, 187, 232);
+        }
+        .expressjs{
+               width: 80%;
+               background-color: tomato;
+        }
+        .mongoDB{
+               width: 85%;
+               background-color: powderblue;
+        }
+        .sass{
+               width: 90%;
+               background-color: greenyellow;
+        }
+
+}
+p{
+       font-weight: bolder;
+       font-family: 'Segoe UI';
+//        background-color: greenyellow;
+       font-size: 20px;
+               
+}
+ @media only screen and (max-width:900px){
+       .background{
+              display: flex;
+              flex-direction: column;
+       }
+ }
+
+///////////////

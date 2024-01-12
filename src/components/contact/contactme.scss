@@ -1,0 +1,83 @@
+.cotactme-container{
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+}
+.contact-box {
+              //  background-color: transparent;
+               width: 600px;
+               height: 500px;
+               border: 1px solid #f1f1f1;
+               perspective: 1000px;
+               
+             }
+             
+             .contact-box-inner {
+               position: relative;
+               width: 100%;
+               height: 100%;
+               text-align: center;
+               transition: transform 0.8s;
+               transform-style: preserve-3d;
+               .contact-box-front{
+                  // background-color: rgb(9, 9, 74);
+                  // color: white;
+                  h2{
+                    margin-top: 20%;
+                    font-size: 40px;
+                  }
+               }
+             }
+             
+             .contact-box:hover .contact-box-inner {
+               transform: rotateY(180deg);
+             }
+             
+             .contact-box-front, .contact-box-back {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               -webkit-backface-visibility: hidden;
+               backface-visibility: hidden;
+             }
+             
+             .contact-box-front {
+              //  background-color: #bbb;
+               color: black;
+             }
+             
+             .contact-box-back {
+              //  background-color: rgb(7, 31, 55);
+               color: white;
+               transform: rotateY(180deg);
+               display: flex;
+               flex-direction: column;
+              //  text-align: center;
+              justify-content: center;
+              
+               .field{
+                margin: 20px 0px;
+                font-size: 20px;
+                input[type=text],
+                input[type=submit],
+                input[type=email],
+                select{
+                  
+                  width: 95%;
+                  font-size: 20px;
+                  padding: 5px 5px;
+                }
+                // input[type=submit]{
+                //   width: 100%;
+                // }
+                // select{
+                //   width: 100%;
+                // }
+                // input[type=email]{
+                //   width: 100%;
+                // }
+               }
+             }
+
+
+           
