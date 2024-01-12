@@ -12,7 +12,8 @@ export default defineConfig({
   // },
   resolve: {
     alias: {
-      '/src': 'opt/build/repo/',
+      screens: path.resolve(__dirname, './src/screens'),
+      components: 'src/components',
     },
   },
 })
