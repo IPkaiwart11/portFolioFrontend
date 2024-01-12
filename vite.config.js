@@ -12,7 +12,7 @@ export default defineConfig({
   // },
   resolve: {
     alias: {
-      '/src': 'opt/build/repo/src',
+      '/src': 'opt/build/repo/',
     },
   },
 })
