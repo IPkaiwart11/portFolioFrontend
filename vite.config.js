@@ -15,14 +15,15 @@
 /////////////////////////
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import path from 'path';  // Explicitly import the 'path' module
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '/src': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src'),
     },
+    extensions: ['.js', '.jsx', '.json'],
   },
   server: {
     proxy: {
@@ -32,6 +33,4 @@ export default defineConfig({
   build: {
     target: 'modules',
   },
-
 });
-
