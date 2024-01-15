@@ -32,5 +32,6 @@ export default defineConfig({
   },
   build: {
     target: 'modules',
+    outDir: 'dist',
   },
 });
