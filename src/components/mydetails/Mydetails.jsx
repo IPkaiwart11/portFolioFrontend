@@ -10,7 +10,7 @@ export default function Mydetails() {
                style={{width:'100%'}} alt="img " /> */}
                <div className="detailcontainer1">
                 <div style={{textAlign:'center'}}>
-                <img src="../../../public/images/ip_image1.jpg"
+                <img src="/images/ip_image1.jpg"
                style={{width:'100%',borderRadius:'650px',padding:'200px'}} alt="img " />
                 </div>
                 <div className="details_container">
