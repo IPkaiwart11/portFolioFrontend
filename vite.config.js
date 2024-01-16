@@ -25,9 +25,11 @@ export default defineConfig({
     },
     extensions: ['.js', '.jsx', '.json'],
   },
+  
   server: {
     proxy: {
-      '/api': 'http://localhost:8800',
+      // '/api': 'http://localhost:8800',
+      '/api': 'https://portfoliobackend-ia9m.onrender.com',
     },
   },
   build: {
