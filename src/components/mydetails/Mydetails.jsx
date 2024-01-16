@@ -11,7 +11,7 @@ export default function Mydetails() {
                <div className="detailcontainer1">
                 <div style={{textAlign:'center'}}>
                 <img src="/images/ip_image1.jpg"
-               style={{width:'100%',borderRadius:'650px',padding:'200px'}} alt="img " />
+               alt="img " />
                 </div>
                 <div className="details_container">
                     <h2>"Passionate MERN stack developer with a strong foundation in MongoDB, Express.js, React.js, and Node.js, dedicated to crafting efficient and scalable web applications."</h2>
