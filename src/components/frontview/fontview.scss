@@ -1,36 +1,111 @@
 
-.fcontainer1{
-               display: flex;
-               flex-direction: row;
-               justify-content: center;
-            //    background-color: rgb(148, 88, 148);
-               padding: 16% ;  
-}
-.fcontainer{
+// .fcontainer1{
+//                display: flex;
+//                flex-direction: row;
+//                justify-content: center;
+//             //    background-color: rgb(148, 88, 148);
+//                padding: 16% ;  
+// }
+// .fcontainer{
 
-           width: 70%;
-           color: aliceblue;
-           display: flex;
-           flex-direction: row;
-           text-align: center;
+//            width: 70%;
+//            color: aliceblue;
+//            display: flex;
+//            flex-direction: row;
+//            text-align: center;
            
-           div{
-               .h1{
-                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                     font-size: 40px;
-                     text-transform: uppercase;
-               }
-               .h2{
-                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                     font-size: 30px;
-                     font-family: cursive;          
-               }
-               .h3{
-                              font-family:fantasy;
-                              font-size: 20px;
-                              padding: 20px;
-                              line-height: 30px;
-                              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;           
-               }
-           } 
-}
+//            div{
+//                .h1{
+//                      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+//                      font-size: 40px;
+//                      text-transform: uppercase;
+//                }
+//                .h2{
+//                      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+//                      font-size: 30px;
+//                      font-family: cursive;          
+//                }
+//                .h3{
+//                               font-family:fantasy;
+//                               font-size: 20px;
+//                               padding: 20px;
+//                               line-height: 30px;
+//                               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;           
+//                }
+//            } 
+// }
+
+/* Common styles for both container classes */
+.fcontainer1, .fcontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    /* Specific styles for the first container */
+    .fcontainer1 {
+      padding: 16%;
+    }
+    
+    /* Specific styles for the second container */
+    .fcontainer {
+      width: 70%;
+      color: aliceblue;
+    }
+    
+    /* Styles for headings inside the second container */
+    .fcontainer div {
+      .h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    
+      .h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: 30px;
+        font-family: cursive;
+      }
+    
+      .h3 {
+        font-family: fantasy;
+        font-size: 20px;
+        padding: 20px;
+        line-height: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    }
+    
+    /* Media query for smaller screens (e.g., mobile devices) */
+    @media only screen and (max-width: 768px) {
+      .fcontainer1, .fcontainer {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .fcontainer1 {
+        padding: 4%;
+      }
+    
+      .fcontainer {
+        width: 97%;
+      }
+    
+      .fcontainer div {
+        .h1 {
+          font-size: 20px;
+        }
+    
+        .h2 {
+          font-size: 19px;
+        }
+    
+        .h3 {
+          font-size: 16px;
+          padding: 10px;
+          line-height: 19px;
+        }
+      }
+    }
+    
