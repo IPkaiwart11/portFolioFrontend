@@ -29,7 +29,7 @@ export default defineConfig({
   server: {
     proxy: {
       // '/api': 'http://localhost:8800',
-      '/api': 'https://portfoliobackend-ia9m.onrender.com',
+      '/api': 'https://portfoliobackend-kunp.onrender.com',
     },
   },
   build: {
