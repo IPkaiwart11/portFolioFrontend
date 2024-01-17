@@ -28,8 +28,11 @@ export default defineConfig({
   
   server: {
     proxy: {
-      // '/api': 'http://localhost:8800',
-      '/api': 'https://portfoliobackend-kunp.onrender.com',
+      '/api': {
+        target: 'https://portfoliobackend-kunp.onrender.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
   build: {
