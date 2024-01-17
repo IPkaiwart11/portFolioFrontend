@@ -19,7 +19,9 @@ export default function Contactme() {
    e.preventDefault();
    try{
     const res = await axios.post('https://portfoliobackend-kunp.onrender.com/api/user',formData);
+
     console.log('Server response:',res.data);
+    alert('successful! Thank you for your connection');
    }catch(error){
     console.error('Erroe',error.message);
    }
