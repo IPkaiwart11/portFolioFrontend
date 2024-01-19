@@ -5,7 +5,8 @@ export default function Contactme() {
   const [formData,setFormData] = useState({
     fullname:'',
     email:'',
-    country:''
+    country:'',
+    message:''
   });
 
   const handleChange = (e)=>{
@@ -28,15 +29,21 @@ export default function Contactme() {
 
   }
   return (
-    <>
+    <div className='wholecontainer'>
+  
     <div className='cotactme-container'>
+    <div className='header'>
+        <h1>Get in touch with me via social media or email.</h1>
+        <h3>I'm open to collaboration and new opportunities.</h3>
+      </div>
        <div className="contact-box">
-  <div className="contact-box-inner">
-    <div className="contact-box-front">
-      <h2>Contact Me</h2>
-    </div>
+  {/* <div className="contact-box-inner"> */}
+      <div className="welcom">
+     <h3> “Thank you for visiting my portfolio! If you have any questions, opportunities, or just want to connect, feel free to reach out to me. I'm always excited to engage with fellow professionals, potential clients, or anyone interested in my work..”</h3>
+      </div>
     
     <div className="contact-box-back">
+      
     <form onSubmit={handleSubmit}>
         <div className="field">
         <label htmlFor="name">Enter Your Full Name:</label>
@@ -45,7 +52,7 @@ export default function Contactme() {
         <div className="field">
         <label htmlFor="email">Email:</label>
               <input type="email" htmlFor='email' onChange={handleChange} name='email' placeholder='abc@gmail.com'/>
-              
+              </div>
         <div className="field">
         <label htmlFor="Country">Country</label>
        
@@ -56,9 +63,12 @@ export default function Contactme() {
        </select>
         </div>
         <div className='field'>
+        <textarea name="message" onChange={handleChange} id="" rows="6"></textarea>
+        </div>
+        <div className='field'>
         <input type="submit" placeholder='submit'/>
         </div>
-        </div>
+        
                
         
 
@@ -67,9 +77,9 @@ export default function Contactme() {
     
   </div>
 </div>
-</div>
+{/* </div> */}
 
 
-    </>
+    </div>
   )
 }

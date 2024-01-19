@@ -10,9 +10,9 @@ export default function Footer() {
                return (
                               <>
                                              <div className="footerContainer">
-                                                           <NavLink> <a href="www.linkedin.com/in/ipkaiwart" target='_blank'><div><LinkedInIcon sx={{ fontSize: 40, color: blue[900] }} /></div></a></NavLink>
+                                                           <NavLink to='https://www.linkedin.com/in/ipkaiwart'><div><LinkedInIcon sx={{ fontSize: 40, color: blue[900] }} /></div></NavLink>
                                                            {/* <NavLink>   <div><FacebookIcon sx={{ fontSize: 40, color: blue[900] }} /></div></NavLink> */}
-                                                           <NavLink> <a href="https://www.instagram.com/ip_kaiwart/" target='_blank'>  <div><InstagramIcon sx={{ fontSize: 40, color: blue[900] }} /></div></a></NavLink>
+                                                           <NavLink to='https://www.instagram.com/ip_kaiwart/'>  <div><InstagramIcon sx={{ fontSize: 40, color: blue[900] }} /></div></NavLink>
                                              </div>
                               </>
                )

@@ -8,7 +8,7 @@ function Navbar() {
             <NavLink to='/'> <div>HOME</div></NavLink>
             <NavLink to='/about'> <div>ABOUT</div></NavLink>
             {/* <div>ABOUT</div> */}
-            <NavLink to='/work'> <div>WORKS</div></NavLink>
+            <NavLink to='/project'> <div>PROJECT</div></NavLink>
             <NavLink to='/user'> <div>CONTACT</div></NavLink>  
       </div>
     </>
