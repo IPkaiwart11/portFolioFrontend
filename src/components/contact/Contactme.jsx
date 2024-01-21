@@ -19,7 +19,9 @@ export default function Contactme() {
   const handleSubmit = async(e)=>{
    e.preventDefault();
    try{
-    const res = await axios.post('https://portfoliobackend-kunp.onrender.com/api/user',formData);
+    const res = await axios.post('https://portfoliobackend-kunp.onrender.com/api/user',formData,{
+      withCredentials: true,
+    });
 
     console.log('Server response:',res.data);
     alert('successful! Thank you for your connection');
