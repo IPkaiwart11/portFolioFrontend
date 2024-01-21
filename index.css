@@ -27,7 +27,7 @@ html {
                animation-duration:5s;
              }
              
-             .content {
+             /* .bgcontent {
                background-color:rgba(255,255,255,.8);
                border-radius:.25em;
                box-shadow:0 0 .25em rgba(0,0,0,.25);
@@ -38,7 +38,7 @@ html {
                text-align:center;
                top:50%;
                transform:translate(-50%, -50%);
-             }
+             } */
              
              h1 {
                font-family:monospace;
