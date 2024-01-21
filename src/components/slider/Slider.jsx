@@ -51,7 +51,7 @@ function plusSlides(n) {
             style={{ width: '100%' }}
             alt="Slide 1"
           />
-          <div className="text">car 1</div>
+          {/* <div className="text">car 1</div> */}
         </div>
 
         <div className="mySlides">
@@ -61,7 +61,7 @@ function plusSlides(n) {
             style={{ width: '100%' }}
             alt="Slide 2"
           />
-          <div className="text">Car 2</div>
+          {/* <div className="text">Car 2</div> */}
         </div>
 
         <div className="mySlides fade">
@@ -71,7 +71,7 @@ function plusSlides(n) {
             style={{ width: '100%' }}
             alt="Slide 3"
           />
-          <div className="text">Car 3</div>
+          {/* <div className="text">Car 3</div> */}
         </div>
 
         <span className="prev" onClick={() => plusSlides(-1)}>prev</span>

@@ -1,4 +1,7 @@
 .slideshow-container{
+     img{
+          border: 10px solid white;
+     }
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -124,17 +127,17 @@
                               justify-content: center;
                               .prev{
                               position: absolute;
-                              margin-top: 25%;
+                              margin-top: 50%;
                               margin-left: -80%;
                               font-size: 25px;
-                              color: blueviolet;
+                              color: white;
                               }
                               .next{
                                position: absolute;
                                margin-left: 80%;
-                               margin-top: 25%;
+                               margin-top: 50%;
                                font-size: 25px;
-                               color: blueviolet;
+                               color: white;
                               }
                               .next:hover,.prev:hover{
                                    cursor: pointer;

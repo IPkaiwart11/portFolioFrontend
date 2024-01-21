@@ -5,6 +5,7 @@
       flex-direction: row;
       justify-content: center;
       text-align: center;
+      height: 100vh;
     }
     
     /* Specific styles for the first container */
@@ -24,17 +25,20 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
         font-size: 40px;
         text-transform: uppercase;
+        color: rgba(245,240,240,0.9);
       }
     
       .h2 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
         font-size: 30px;
+        color: rgba(245,240,240,0.8);
         font-family: cursive;
       }
     
       .h3 {
         font-family: fantasy;
         font-size: 20px;
+        color: rgba(245,240,240,0.8);
         padding: 20px;
         line-height: 30px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -58,15 +62,15 @@
     
       .fcontainer div {
         .h1 {
-          font-size: 20px;
+          font-size: 25px;
         }
     
         .h2 {
-          font-size: 19px;
+          font-size: 22px;
         }
     
         .h3 {
-          font-size: 16px;
+          font-size: 20px;
           padding: 10px;
           line-height: 19px;
         }

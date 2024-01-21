@@ -13,14 +13,19 @@
                justify-content: center;
                .header{
                 width: 100%;
-                color: white;
                 padding: 10px;
+                h1{
+                  color: rgba(245,243,243,0.9);
+                }
+                h3{
+                  color: rgba(245,243,243,0.9);
+                }
                }
 }
 .welcom{
   width: 100%;
   padding: 10px;
-  color: white;
+  color: rgba(245,243,243,0.8);
 }  
     .contact-box{
       display: flex;
@@ -47,16 +52,22 @@
                 input[type=email],
                 textarea,
                 select{
-                  
+                  // outline: none;
+                  border: none;
                   width: 95%;
                   font-size: 20px;
                   padding: 5px 5px;
                   border-radius: 15px ;
+                  background-color: rgba(255,255,255,0.1);
                   
                 }
                 input[type=submit]{
-                  background-color: green;
+                  background-color: rgba(22, 40, 22,0.4);
                   color: white;
+                  border: none;
+                }
+                input[type=submit]:hover{
+                  background-color: rgba(13, 67, 13, 0.9);
                 }
                }
              }
@@ -115,10 +126,10 @@
                   border-radius: 15px ;
                   
                 }
-                input[type=submit]{
-                  background-color: green;
-                  color: white;
-                }
+                // input[type=submit]{
+                //   background-color: green;
+                //   color: white;
+                // }
                }
              }
 
@@ -178,10 +189,10 @@
                               border-radius: 15px ;
                               
                             }
-                            input[type=submit]{
-                              background-color: green;
-                              color: white;
-                            }
+                            // input[type=submit]{
+                            //   background-color: green;
+                            //   color: white;
+                            // }
                            }
                          }
             
