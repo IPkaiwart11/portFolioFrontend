@@ -22,7 +22,10 @@ export default function Contactme() {
     const res = await axios.post('https://portfoliobackend-kunp.onrender.com/api/user',formData,{
        withCredentials: true,
     });
-
+    setFormData({ fullname:'',
+    email:'',
+    country:'',
+    message:'' });
     console.log('Server response:',res.data);
     alert('successful! Thank you for your connection');
    }catch(error){
