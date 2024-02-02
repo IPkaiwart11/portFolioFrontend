@@ -53,11 +53,11 @@ export default function Contactme() {
     <form onSubmit={handleSubmit}>
         <div className="field">
         <label htmlFor="name">Enter Your Full Name:</label>
-               <input type="text" onChange={handleChange} htmlFor='name' name='fullname' placeholder='Ex- Mukesh kaiwart' required/>
+               <input type="text" onChange={handleChange} htmlFor='name' name='fullname' value={formData.fullname} placeholder='Ex- IP kaiwart' required/>
         </div>
         <div className="field">
         <label htmlFor="email">Email:</label>
-              <input type="email" htmlFor='email' onChange={handleChange} name='email' placeholder='abc@gmail.com' required/>
+              <input type="email" htmlFor='email' value={formData.email} onChange={handleChange} name='email' placeholder='abc@gmail.com' required/>
               </div>
         <div className="field">
         <label htmlFor="Country">Country</label>
@@ -70,7 +70,7 @@ export default function Contactme() {
        </select>
         </div>
         <div className='field'>
-        <textarea name="message" onChange={handleChange} id="" rows="6" required></textarea>
+        <textarea name="message" onChange={handleChange} value={formData.message} id="" rows="6" required></textarea>
         </div>
         <div className='field'>
         <input type="submit" placeholder='submit'/>
