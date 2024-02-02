@@ -29,7 +29,8 @@ export default function Contactme() {
     console.log('Server response:',res.data);
     alert('successful! Thank you for your connection');
    }catch(error){
-    console.error('Erroe',error.message);
+    console.error('Erroe',error);
+    alert('Oops! Something went wrong. Please try again later.'); // Show a generic error message to the user
    }
 
   }
@@ -61,7 +62,8 @@ export default function Contactme() {
         <div className="field">
         <label htmlFor="Country">Country</label>
        
-       <select name="country" onChange={handleChange} id="country" value={formData.country} required>
+       <select name="country" onChange={handleChange}  value={formData.country} required>
+       <option value="">Select Country</option>
         <option value="india">India</option>
         <option value="usa">USA</option>
         <option value="australia">Australia</option>
