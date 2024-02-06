@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <span><MenuIcon/></span>
+          <span><MenuIcon sx={{ fontSize: 50 }}/></span>
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
