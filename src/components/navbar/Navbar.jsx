@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import "./navbar.scss"
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(true)
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
