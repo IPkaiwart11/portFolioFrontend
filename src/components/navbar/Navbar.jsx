@@ -1,17 +1,40 @@
-import React from 'react'
+
+import React,{ useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import MenuIcon from '@mui/icons-material/Menu';
 import "./navbar.scss"
-import { NavLink } from "react-router-dom";
-function Navbar() {
+
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false)
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
+
   return (
-    <>
-      <div className='navcontainer'>
-            <NavLink to='/'> <div>HOME</div></NavLink>
-            <NavLink to='/about'> <div>ABOUT</div></NavLink>
-            {/* <div>ABOUT</div> */}
-            <NavLink to='/project'> <div>PROJECT</div></NavLink>
-            <NavLink to='/user'> <div>CONTACT</div></NavLink>  
+    <nav className="navbar">
+      <div className="container">
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <span><MenuIcon/></span>
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <ul>
+            <li>
+              <NavLink to="/">HOME</NavLink>
+            </li>
+            <li>
+            <NavLink to='/about'>ABOUT</NavLink>
+            </li>
+            <li>
+            <NavLink to='/project'> PROJECT</NavLink>
+            </li>
+            <li>
+            <NavLink to='/user'>CONTACT</NavLink>  
+            </li>
+          </ul>
+        </div>
       </div>
-    </>
+    </nav>
   )
 }
 
