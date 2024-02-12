@@ -14,7 +14,7 @@ function Slider() {
 
   return (
     <div className="main">
-      <h1>My Gallery</h1><br /><br />
+      <h1>My Gallery</h1><br />
     
       {/* <h2></h2> */}
 
@@ -37,7 +37,7 @@ function Slider() {
         {portfolioItems.map((item, index) => (
           <div key={index} className={`column ${item.category === filter || filter === 'all' ? 'show' : ''}`}>
             <div className="content">
-              <img src={item.image} alt={item.alt} style={{ width: '100%' }} />
+              <img src={item.image} alt={item.alt} style={{ width: '100%', height:'300px' }} />
               <h4>{item.title}</h4>
               <p>{item.description}</p>
             </div>
