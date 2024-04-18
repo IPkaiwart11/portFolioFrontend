@@ -8,11 +8,11 @@
                 text-align: center;
              
                  h1 {
-                   color: white;
+                   color: rgb(225, 237, 247);
                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                    padding: 10px 20px;
                    text-align: center;
-                   text-shadow: 3px 3px  red;
+                   text-shadow: 3px 3px  rgb(4, 8, 13);
                  }
                  .detailcontainer1{
 
@@ -33,13 +33,16 @@
                    width: 100%;
                   //  margin-left: 50%;
                   h2{
-                    color: rgba(243, 240, 240,0.9);
+                    color: rgba(165, 225, 239, 0.9);
                     font-size: 30px;
+                    font-family: Poppins;
+                    // font-family: 'Times New Roman', Times, serif;
                   }
                   .experience{
                     li{
-                      font-family: sans-serif;
-                      color: rgba(243, 240, 240, 0.8);
+                      list-style: none;
+                      font-family:Poppins;
+                      color: rgba(170, 224, 240, 0.8);
                     }
                   }
                  }

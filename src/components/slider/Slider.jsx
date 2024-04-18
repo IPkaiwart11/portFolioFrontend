@@ -37,7 +37,7 @@ function Slider() {
         {portfolioItems.map((item, index) => (
           <div key={index} className={`column ${item.category === filter || filter === 'all' ? 'show' : ''}`}>
             <div className="content">
-              <img src={item.image} alt={item.alt} style={{ width: '100%', height:'300px' }} />
+              <img src={item.image} alt={item.alt} />
               <h4>{item.title}</h4>
               <p>{item.description}</p>
             </div>

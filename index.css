@@ -1,3 +1,11 @@
+body {
+  
+    background: url(https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?w=996&t=st=1713448525~exp=1713449125~hmac=14e1115ad4c9f7ae6cf75b0aa076080b547af932b81523852a6f363e5fdf969a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
 html {
                height:100%;
              }
