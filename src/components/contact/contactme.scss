@@ -54,12 +54,16 @@
                 select{
                   // outline: none;
                   border: none;
+                  color: white;
                   width: 95%;
                   font-size: 20px;
                   padding: 5px 5px;
                   border-radius: 15px ;
                   background-color: rgba(255,255,255,0.1);
                   
+                }
+                input{
+                  color: white;
                 }
                 input[type=submit]{
                   background-color: rgba(22, 40, 22,0.4);
