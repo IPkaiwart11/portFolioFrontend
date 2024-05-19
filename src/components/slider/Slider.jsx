@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Slider() {
   return (
+    <>
+    <h3>this is my bookselling app</h3>
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <iframe 
       src="https://book-selling-app.vercel.app" 
@@ -10,7 +12,8 @@ export default function Slider() {
       height="80%" 
       style={{ border: 'none' }}
     ></iframe>
-    <p>this is my bookselling app</p>
+    
   </div>
+  </>
   )
 }
